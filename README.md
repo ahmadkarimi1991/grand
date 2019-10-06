@@ -1,2 +1,2 @@
-# grand
+# Grand
 Grand Bootstrap Dashboard
