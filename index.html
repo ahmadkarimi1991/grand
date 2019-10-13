@@ -11,10 +11,17 @@
     <title>Grand</title>
 </head>
 <body class="d-flex flex-column">
-    <aside class="d-none d-md-block bg-dark" id="aside">Sidebar</aside>
-    <main class="flex-grow-1 bg-light" id="main">Main</main>
+    <aside class="bg-dark" id="aside">Sidebar</aside>
+    <main class="flex-grow-1 bg-light" id="main">
+        <button class="btn btn-primary" id="btn">Hi</button>
+    </main>
     <script src="assets/vendors/jquery-3.4.1.min.js"></script>
     <script src="assets/vendors/popper.min.js"></script>
     <script src="assets/vendors/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $('#btn').on('click', function() {
+            $('body').addClass('aside-open');
+        });
+    </script>
 </body>
 </html>
