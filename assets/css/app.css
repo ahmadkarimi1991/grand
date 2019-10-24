@@ -8,16 +8,20 @@ body {
 
 #aside {
   position: fixed;
-  left: -260px;
   top: 0;
+  left: -260px;
   width: 260px;
   height: 100%;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .aside-link {
   height: 40px;
   color: #f8f9fa;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .aside-link:hover {
@@ -33,16 +37,32 @@ body {
   display: block;
   width: 40px;
   height: inherit;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+body.rtl #aside {
+  right: -260px;
+  left: 0;
 }
 
 @media (min-width: 768px) {
   #aside {
     left: 0;
   }
+
+  body.rtl #aside {
+    right: 0;
+    left: auto;
+  }
 }
 .aside-open #aside {
   left: 0;
+}
+
+body.rtl .aside-open #aside {
+  right: 0;
 }
 
 .brand {
@@ -52,6 +72,8 @@ body {
 
 #main {
   margin-left: 0;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
