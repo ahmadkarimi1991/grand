@@ -5,8 +5,22 @@
     transition: all .2s;
 }
 
+.rtl {
+    #main {
+        margin-right: 0;
+        margin-left: unset;
+    }
+}
+
 @media (min-width: 768px) {
     #main {
         margin-left: 260px;
+    }
+
+    .rtl {
+        #main {
+            margin-right: 260px;
+            margin-left: unset;
+        }
     }
 }

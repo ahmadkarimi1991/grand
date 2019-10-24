@@ -5,3 +5,8 @@ html {
 body {
     min-height: 100%;
 }
+
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
