@@ -89,6 +89,12 @@
         $('#aside-open').click(function() {
             $('body').toggleClass('aside-open');
         });
+
+        $('#content').click(function() {
+            if ($('body').hasClass('aside-open')) {
+                $('body').removeClass('aside-open');
+            }
+        })
     </script>
 </body>
 </html>
