@@ -15,6 +15,27 @@ body {
   transition: all 0.2s;
 }
 
+.aside-link {
+  height: 40px;
+  color: #f8f9fa;
+  transition: all 0.2s;
+}
+.aside-link:hover {
+  color: #f8f9fa;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.aside-link:hover .aside-icon {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.aside-icon {
+  display: block;
+  width: 40px;
+  height: inherit;
+  transition: all 0.2s;
+}
+
 @media (min-width: 768px) {
   #aside {
     left: 0;
@@ -22,6 +43,11 @@ body {
 }
 .aside-open #aside {
   left: 0;
+}
+
+.brand {
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 #main {
@@ -33,6 +59,23 @@ body {
   #main {
     margin-left: 260px;
   }
+}
+#header {
+  height: 55px;
+}
+
+.header-link {
+  color: #343a40;
+  min-width: 55px;
+  transition: all 0.2s;
+}
+.header-link:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+  height: 55px;
 }
 
 /*# sourceMappingURL=app.css.map */

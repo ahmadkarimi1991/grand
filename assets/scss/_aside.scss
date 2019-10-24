@@ -7,6 +7,28 @@
     transition: all .2s;
 }
 
+.aside-link {
+    height: 40px;
+    color: #f8f9fa;
+    transition: all .2s;
+
+    &:hover {
+        color: #f8f9fa;
+        text-decoration: none;
+        background-color: rgba($color: #000000, $alpha: .15);
+
+        .aside-icon {
+            background-color: rgba($color: #000000, $alpha: .25);
+        }
+    }
+}
+.aside-icon {
+    display: block;
+    width: 40px;
+    height: inherit;
+    transition: all .2s;
+}
+
 @media (min-width: 768px) {
     #aside {
         left: 0;

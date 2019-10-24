@@ -5,22 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="assets/vendors/fontawesome-free-5.11.2-web/css/all.css">
     <link rel="stylesheet" href="assets/vendors/bootstrap-4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
     <title>Grand</title>
 </head>
 <body class="d-flex flex-column">
-    <aside class="bg-dark" id="aside">Sidebar</aside>
-    <main class="flex-grow-1 bg-light" id="main">
-        <button class="btn btn-primary" id="btn">Hi</button>
+    <aside class="bg-dark text-light" id="aside">
+        <div class="d-flex justify-content-center align-items-center brand">Brand</div>
+        <nav class="pt-3">
+            <a href="#" class="d-flex align-items-center aside-link">
+                <span class="d-flex justify-content-center align-items-center text-light aside-icon">
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="px-2">Home</span>
+            </a>
+            <a href="#" class="d-flex align-items-center aside-link">
+                <span class="d-flex justify-content-center align-items-center text-light aside-icon">
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="px-2">Home</span>
+            </a>
+            <a href="#" class="d-flex align-items-center aside-link">
+                <span class="d-flex justify-content-center align-items-center text-light aside-icon">
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="px-2">Home</span>
+            </a>
+            <span class="d-block px-3 mt-3 mb-2 text-muted">Title</span>
+            <a href="#" class="d-flex align-items-center aside-link">
+                <span class="d-flex justify-content-center align-items-center text-light aside-icon">
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="px-2">Home</span>
+            </a>
+            <a href="#" class="d-flex align-items-center aside-link">
+                <span class="d-flex justify-content-center align-items-center text-light aside-icon">
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="px-2">Home</span>
+            </a>
+            <a href="#" class="d-flex align-items-center aside-link">
+                <span class="d-flex justify-content-center align-items-center text-light aside-icon">
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="px-2">Home</span>
+            </a>
+        </nav>
+    </aside>
+    <main class="flex-grow-1 d-flex flex-column bg-light" id="main">
+        <header id="header" class="d-flex justify-content-between bg-white shadow-sm">
+            <div class="d-flex">
+                <a href="#" id="aside-open" class="d-flex justify-content-center align-items-center text-dark header-link">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+            </div>
+
+            <div class="d-flex">
+                <a href="#" class="d-flex justify-content-center align-items-center text-dark header-link">
+                    <i class="fas fa-bell"></i>
+                </a>
+            </div>
+        </header>
+        <div id="content" class="flex-grow-1 py-3">
+            <div class="container-fluid">Container</div>
+        </div>
+        <footer id="footer" class="border-top d-flex justify-content-between align-items-center px-3">
+            <nav>
+                <a href="#" class="btn btn-light">Contact</a>
+                <a href="#" class="btn btn-light">Team</a>
+                <a href="#" class="btn btn-light">About</a>
+            </nav>
+            <div>
+                <span>2019 ©</span> <a href="#" class="text-dark">Grand</a>
+            </div>
+        </footer>
     </main>
     <script src="assets/vendors/jquery-3.4.1.min.js"></script>
     <script src="assets/vendors/popper.min.js"></script>
     <script src="assets/vendors/bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script>
-        $('#btn').on('click', function() {
-            $('body').addClass('aside-open');
+        $('#aside-open').click(function() {
+            $('body').toggleClass('aside-open');
         });
     </script>
 </body>
