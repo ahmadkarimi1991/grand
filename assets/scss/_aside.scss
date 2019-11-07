@@ -9,33 +9,6 @@
     transition: all .2s;
 }
 
-.aside-link {
-    height: 40px;
-    color: #f8f9fa;
-    -webkit-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
-
-    &:hover {
-        color: #f8f9fa;
-        text-decoration: none;
-        background-color: rgba($color: #000000, $alpha: .15);
-
-        .aside-icon {
-            background-color: rgba($color: #000000, $alpha: .25);
-        }
-    }
-}
-
-.aside-icon {
-    display: block;
-    width: 40px;
-    height: inherit;
-    -webkit-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
-}
-
 .rtl {
     #aside {
         right: -260px;
