@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="assets/vendors/fontawesome-free-5.11.2-web/css/all.css">
     <link rel="stylesheet" href="assets/vendors/bootstrap-4.4.1/css/bootstrap.min.css">
@@ -11,6 +12,7 @@
 
     <title>Grand</title>
 </head>
+
 <body class="d-flex flex-column rtl">
     <aside class="bg-dark text-light" id="aside">
         <div class="d-flex justify-content-center align-items-center brand">Brand</div>
@@ -56,19 +58,21 @@
             </div>
         </footer>
     </main>
+
     <script src="assets/vendors/jquery-3.4.1.min.js"></script>
     <script src="assets/vendors/popper.min.js"></script>
     <script src="assets/vendors/bootstrap-4.4.1/js/bootstrap.min.js"></script>
     <script>
-        $('#aside-open').click(function() {
+        $('#aside-open').click(function () {
             $('body').toggleClass('aside-open');
         });
 
-        $('#content').click(function() {
+        $('#content').click(function () {
             if ($('body').hasClass('aside-open')) {
                 $('body').removeClass('aside-open');
             }
-        })
+        });
     </script>
 </body>
+
 </html>
